@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Apollo-GraphQL-CRUD-Auth/static/css/main.728962ad.css",
-    "main.js": "/Apollo-GraphQL-CRUD-Auth/static/js/main.90c1c940.js",
+    "main.js": "/Apollo-GraphQL-CRUD-Auth/static/js/main.b52082ca.js",
     "static/js/787.d0f8f0a9.chunk.js": "/Apollo-GraphQL-CRUD-Auth/static/js/787.d0f8f0a9.chunk.js",
     "index.html": "/Apollo-GraphQL-CRUD-Auth/index.html",
     "main.728962ad.css.map": "/Apollo-GraphQL-CRUD-Auth/static/css/main.728962ad.css.map",
-    "main.90c1c940.js.map": "/Apollo-GraphQL-CRUD-Auth/static/js/main.90c1c940.js.map",
+    "main.b52082ca.js.map": "/Apollo-GraphQL-CRUD-Auth/static/js/main.b52082ca.js.map",
     "787.d0f8f0a9.chunk.js.map": "/Apollo-GraphQL-CRUD-Auth/static/js/787.d0f8f0a9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.728962ad.css",
-    "static/js/main.90c1c940.js"
+    "static/js/main.b52082ca.js"
   ]
 }
