@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Apollo-GraphQL-CRUD-Auth/static/css/main.ebb3d88e.css",
-    "main.js": "/Apollo-GraphQL-CRUD-Auth/static/js/main.f5d7e9d6.js",
+    "main.css": "/Apollo-GraphQL-CRUD-Auth/static/css/main.728962ad.css",
+    "main.js": "/Apollo-GraphQL-CRUD-Auth/static/js/main.96321eff.js",
     "static/js/787.d0f8f0a9.chunk.js": "/Apollo-GraphQL-CRUD-Auth/static/js/787.d0f8f0a9.chunk.js",
     "index.html": "/Apollo-GraphQL-CRUD-Auth/index.html",
-    "main.ebb3d88e.css.map": "/Apollo-GraphQL-CRUD-Auth/static/css/main.ebb3d88e.css.map",
-    "main.f5d7e9d6.js.map": "/Apollo-GraphQL-CRUD-Auth/static/js/main.f5d7e9d6.js.map",
+    "main.728962ad.css.map": "/Apollo-GraphQL-CRUD-Auth/static/css/main.728962ad.css.map",
+    "main.96321eff.js.map": "/Apollo-GraphQL-CRUD-Auth/static/js/main.96321eff.js.map",
     "787.d0f8f0a9.chunk.js.map": "/Apollo-GraphQL-CRUD-Auth/static/js/787.d0f8f0a9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ebb3d88e.css",
-    "static/js/main.f5d7e9d6.js"
+    "static/css/main.728962ad.css",
+    "static/js/main.96321eff.js"
   ]
 }
