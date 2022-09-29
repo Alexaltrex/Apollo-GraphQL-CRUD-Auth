@@ -1,0 +1,32 @@
+@import "../../assets/scss/app";
+
+.chat {
+
+  .title {
+    @include h1;
+  }
+
+  .form {
+    margin-top: 24px;
+
+    .submitBtn {
+      margin-top: 8px;
+    }
+  }
+
+  .messages {
+    margin-top: 16px;
+
+    .message {
+      span:nth-child(1) {
+        font-weight: bold;
+        font-style: italic;
+      }
+    }
+  }
+
+  .btn {
+    display: block;
+    margin-top: 16px;
+  }
+}

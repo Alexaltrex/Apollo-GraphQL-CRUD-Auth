@@ -1,0 +1,41 @@
+@import "../../assets/scss/app";
+
+.createPage {
+  .title {
+    @include h1;
+  }
+
+  .list {
+    margin-top: 16px;
+  }
+
+  .fieldsetCustom {
+    display: block;
+    padding-top: 8px;
+    margin-top: 16px;
+
+    .form {
+
+      .formInner {
+        display: flex;
+
+        .fields {
+          flex-grow: 1;
+          .field {
+            &:not(:first-child) {
+              margin-top: 16px;
+            }
+          }
+        }
+
+        .colorPicker {
+          margin-left: 16px;
+        }
+      }
+    }
+
+    .btn {
+      margin-top: 16px;
+    }
+  }
+}

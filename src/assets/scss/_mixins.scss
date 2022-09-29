@@ -1,0 +1,104 @@
+//========= BREAK POINTS ===========//
+@mixin desktop {
+  @media all and (min-width: 1140px) {
+    @content;
+  }
+}
+
+@mixin onlyMobile($displayType: block) {
+  display: $displayType;
+  @content;
+
+  @include desktop() {
+    display: none;
+  }
+}
+
+@mixin onlyDesktop($displayType: block) {
+  display: none;
+
+  @include desktop {
+    display: $displayType;
+    @content;
+  }
+}
+
+//========= FONTS ===========//
+@mixin h1 {
+  font-size: 24px;
+  color: #000;
+
+  @include desktop {
+    font-size: 28px;
+  }
+
+  &:first-letter {
+    color: orange;
+    font-weight: bold;
+  }
+}
+
+//========= WRAPPERS ===========//
+@mixin container {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @include desktop {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@mixin inner {
+  height: 100%;
+  box-sizing: border-box;
+  padding: 16px;
+
+  @include desktop {
+    padding: 24px;
+    width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+//========= OTHERS ===========//
+@mixin button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+@mixin centerColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin centeredColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin centerRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin absoluteCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin absoluteStart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}

@@ -1,0 +1,17 @@
+@import "../../assets/scss/app";
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+
+  .main {
+    position: relative;
+    flex-grow: 1;
+
+    .inner {
+      @include inner;
+    }
+  }
+}

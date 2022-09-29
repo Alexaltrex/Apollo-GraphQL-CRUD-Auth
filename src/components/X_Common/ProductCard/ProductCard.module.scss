@@ -1,0 +1,19 @@
+.productCard {
+  margin-top: 8px;
+  display: flex;
+
+  .canvas {
+    width: 60px;
+    height: 60px;
+  }
+
+  .texts {
+    margin-left: 16px;
+
+    p {
+      span {
+        font-weight: bold;
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+@import "../../assets/scss/app";
+
+.burgerMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #d1d4e2;
+  transform: translateX(101%);
+  z-index: 999;
+  transition: 0.3s;
+  @include centerColumn;
+
+  &_open {
+    transform: translateX(0%);
+  }
+
+  .closeBtn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    border: 3px dashed #249124;
+    padding: 5px 50px;
+    border-radius: 10px;
+
+    .link {
+      font-size: 32px;
+      text-decoration: none;
+      color: #000;
+      transition: 0.3s;
+
+      &:not(:first-child) {
+        margin-top: 3px;
+      }
+
+      &:hover {
+        color: grey;
+      }
+
+      &_crud {
+        span {
+          display: inline-block;
+          font-size: 36px;
+          font-weight: bold;
+          color: #fcc86c;
+          background: #249124;
+          border-radius: 3px;
+          padding: 2px;
+          transition: 0.3s;
+        }
+
+        &:hover {
+          span {
+            background: #fcc86c;
+            color: #249124;
+          }
+        }
+
+      }
+    }
+  }
+}

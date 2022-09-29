@@ -1,0 +1,22 @@
+@import "../../assets/scss/app";
+
+.refetchingPage {
+  .title {
+    @include h1;
+  }
+
+  .product {
+    margin-top: 16px;
+
+    p {
+      span {
+        font-weight: bold;
+      }
+    }
+  }
+
+  .btn {
+    display: block;
+    margin-top: 16px;
+  }
+}

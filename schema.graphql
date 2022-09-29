@@ -1,0 +1,118 @@
+# This file was generated based on ".graphqlconfig". Do not edit manually.
+
+schema {
+    query: Query
+    mutation: Mutation
+    subscription: Subscription
+}
+
+"==== CATEGORY ===="
+type Category {
+    id: ID!
+    name: String!
+    products: [Product!]!
+}
+
+type LoginResponse {
+    email: String!
+    id: String
+    login: String!
+    token: String!
+}
+
+"==== MESSAGE ===="
+type Message {
+    author: String!
+    id: ID!
+    text: String!
+}
+
+"======== MUTATION ========"
+type Mutation {
+    "==== ADD MESSAGE ===="
+    addMessage(addMessageData: AddMessageData!): Message!
+    "==== CREATE PRODUCT ===="
+    createProduct(createProductData: CreateProduct!): Product!
+    "==== DELETE PRODUCT ===="
+    deleteProduct(id: ID!): Product!
+    "==== LOGIN ===="
+    login(loginData: LoginData!): LoginResponse
+    "==== REGISTRATION ===="
+    registration(registrationData: RegistrationData!): RegistrationResponse
+    "==== UPDATE PRODUCT ===="
+    updateProduct(updateProductData: UpdateProduct!): Product!
+}
+
+"==== PRODUCT ===="
+type Product {
+    categoryId: String!
+    color: String!
+    count: Int!
+    id: ID!
+    name: String!
+}
+
+"======== QUERY ========"
+type Query {
+    "==== GET ALL CATEGORIES ===="
+    categories: [Category!]!
+    "==== GET ALL CATEGORY BY ID ===="
+    category(id: ID!): Category!
+    "==== TEST TEST TEST ===="
+    getUsers: [User!]!
+    "==== GET ALL MESSAGES ===="
+    messages: [Message!]!
+    "==== GET PRODUCT BY ID ===="
+    product(id: ID!): Product!
+    "==== GET ALL PRODUCTS ===="
+    products: [Product!]!
+}
+
+type RegistrationResponse {
+    message: String!
+}
+
+type Subscription {
+    messageCreated: Message
+}
+
+"==== USER ===="
+type User {
+    email: String!
+    id: ID!
+    login: String!
+    password: String!
+}
+
+input AddMessageData {
+    text: String!
+}
+
+"==== INPUT FOR CREATE PRODUCT ===="
+input CreateProduct {
+    categoryId: String!
+    color: String!
+    count: Int!
+    name: String!
+}
+
+"==== INPUT FOR LOGIN ===="
+input LoginData {
+    email: String!
+    password: String!
+}
+
+"==== INPUT FOR REGISTRATION ===="
+input RegistrationData {
+    email: String!
+    login: String!
+    password: String!
+}
+
+"==== INPUT FOR UPDATE PRODUCT ===="
+input UpdateProduct {
+    color: String!
+    count: Int!
+    id: ID!
+    name: String!
+}

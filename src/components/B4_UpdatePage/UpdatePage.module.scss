@@ -1,0 +1,13 @@
+@import "../../assets/scss/app";
+
+.updatePage {
+  .title {
+    @include h1;
+  }
+
+  .items {
+    margin-top: 16px;
+  }
+
+
+}

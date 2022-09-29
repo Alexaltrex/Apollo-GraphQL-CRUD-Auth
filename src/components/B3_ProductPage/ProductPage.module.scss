@@ -1,0 +1,61 @@
+@import "../../assets/scss/app";
+
+.productPage {
+
+  .title {
+    @include h1;
+  }
+
+  .navigator {
+    margin-top: 16px;
+
+    a {
+      color: #000;
+    }
+  }
+
+  .list {
+    margin-top: 8px;
+
+    .product {
+      margin-top: 8px;
+      display: flex;
+
+      .canvas {
+
+      }
+
+      .texts {
+
+        p {
+          span {
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+
+  //.product {
+  //  margin-top: 16px;
+  //  p {
+  //    span {
+  //      font-weight: bold;
+  //    }
+  //  }
+  //}
+  //.btn {
+  //  margin-top: 16px;
+  //}
+  //.form {
+  //  margin-top: 16px;
+  //  .field {
+  //    &:not(:first-child) {
+  //      margin-top: 16px;
+  //    }
+  //  }
+  //  .btn {
+  //    margin-top: 16px;
+  //  }
+  //}
+}

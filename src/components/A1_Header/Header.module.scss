@@ -1,0 +1,109 @@
+@import "../../assets/scss/app";
+
+.header {
+  background: royalblue;
+  height: 40px;
+
+
+  @include desktop {
+    height: 60px;
+  }
+
+  .inner {
+    @include inner;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+      padding: 2px 8px;
+      background: #FFF;
+      border-radius: 999px;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      transition: 0.3s;
+
+      p {
+        color: green;
+        font-weight: bold;
+        font-size: 16px;
+        margin-left: 8px;
+
+        @include desktop {
+          font-size: 24px;
+        }
+      }
+
+      svg {
+        height: 20px;
+
+        &:nth-child(2) {
+          margin-left: 8px;
+        }
+      }
+
+      &:hover {
+        background: #fff0d5;
+      }
+
+    }
+
+    .right {
+      height: 100%;
+      display: flex;
+      align-items: center;
+
+      .links {
+        @include onlyDesktop(flex);
+        align-items: center;
+
+        .link {
+          text-decoration: none;
+          color: #FFF;
+          font-size: 18px;
+          transition: 0.3s;
+
+
+          &:not(:first-child) {
+            margin-left: 24px;
+          }
+
+          &_crud {
+            span {
+              display: inline-block;
+              font-weight: 800;
+              font-size: 24px;
+              color: #008000;
+              background: #fcc86c;
+              padding: 2px;
+              border-radius: 3px;
+              transition: 0.3s;
+            }
+
+            &:hover {
+              span {
+                background: #008000;
+                color: #fcc86c;
+              }
+
+            }
+          }
+
+          &:hover {
+            color: #CCC;
+          }
+        }
+      }
+
+      .burgerBtn {
+        @include onlyMobile(flex);
+        margin-left: 8px;
+      }
+    }
+
+
+  }
+
+
+}

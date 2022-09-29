@@ -1,0 +1,24 @@
+@import "../../assets/scss/app";
+
+.deletePage {
+  .title {
+    @include h1;
+  }
+
+  .list {
+    margin-top: 16px;
+
+    .item {
+      display: flex;
+      align-items: center;
+
+      &:not(:first-child) {
+        margin-top: 8px;
+      }
+
+      p {
+        width: 100px;
+      }
+    }
+  }
+}
